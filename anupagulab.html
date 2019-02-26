@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head>
+<script src=""></script>
+<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
+<style>
+body {
+  font-family: 'Megrim', cursive;
+  margin: 0 auto;
+  max-width: 600px;
+  background-color:lightgrey;
+  text-align: center;
+}
+div {
+  height: 500px;
+  background-size: 200px;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family:'Megrim', monospace;
+  text-align: center;
+  font-size: 75px;
+  color: #aaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(0,0,10,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,255,1), rgba(255,100,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(255,0,0,1), rgba(0,0,255,.4));
+  background: -moz-linear-gradient(bottom, rgba(255,0,255,1), rgba(0,255,0,.4));
+  padding: 0px;
+  line-height: 29px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 4px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyBrock_TakeChances_NowNever_Hoodiet_MockUp_Back_BLK_bc710903-fa19-44a2-b17f-5394924437ff_2048x.jpg?v=1538750461");
+}
+.second{
+  background-image: url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyB_NoworNever_Hoodie_BlueBackMockUpRev_2048x.jpg?v=1516309038");
+}
+.dessert{
+  background-image: url("https://i.pinimg.com/originals/9f/a7/03/9fa70364514afabc5c65eed0a8c83c35.jpg");
+}
+.price {
+  float: right;
+}  
+
+ }
+    ul {
+      padding: 10px;
+      background: rgba(0,255,255,.3);
+    }
+    li {
+      display: inline;
+      padding: 30px 30px 30px 10px;
+    }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+}
+}
+</style>
+
+</head>
+
+<body>
+    <ul>
+      <li><button onclick= BlackCollection()>BlackCollection</button></li>
+      <li><button onclick=BabyBlueCollection()>BabyBlueCollection</button></li>
+      <li><button onclick=BabyPinkCollection()>BabyPinkCollection</button></li>
+    </ul>
+<h1>Take Chances</h1>
+<h2>A Life Project.</h2>
+
+<div id="clothingline"></div>
+
+<script>
+BlackCollectionImages = [
+  'url("https://www.artistshot.com/assets/images/admin/product_design/2341907/colby-brock-take-chances-hoodie.jpg")',
+  'url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyBrock_TakeChances_NowNever_Hoodiet_MockUp_Back_BLK_bc710903-fa19-44a2-b17f-5394924437ff_2048x.jpg?v=1548210012")',
+  'url("https://www.artistshot.com/assets/images/admin/product_design/2341906/colby-brock-take-chances-t-shirt.jpg")'
+]
+BabyBlueCollectionImages = [
+  'url("https://i.pinimg.com/originals/27/22/f5/2722f584af02ba3c86af071cb1a6cfbc.jpg")',
+  'url("https://i.pinimg.com/236x/93/24/37/932437d3f63cd8ad44d8a9a90a20be42.jpg")',
+ 'url("https://i.pinimg.com/originals/80/7d/9f/807d9fbb00a16f601e7ef7552ef5bff6.jpg")'
+]
+BabyPinkCollectionImages = [
+  'url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyBrock__Now-Never_DontWait_Hoodie_MockUp_Front_PNK_2048x.jpg?v=1516309038")',
+  'url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyB_NoworNever_Hoodie_PinkBackMockUpRev_2048x.jpg?v=1516309038")',
+  'url("https://i.pinimg.com/originals/9f/a7/03/9fa70364514afabc5c65eed0a8c83c35.jpg")'
+]
+  
+
+ 
+  
+
+
+
+function BlackCollection() {
+  beyond = document.getElementById("clothingline")
+  beyond.innerHTML = ''
+  beyond.innerHTML += BlackCollectionDivs[0]
+  beyond.innerHTML += BlackCollectionDivs[1]
+  beyond.innerHTML += BlackCollectionDivs[2]
+  //alert("you've selected the Og Black Take Chances Hoodie")
+  items = document.getElementsByClassName("item")
+  items[0].style.background = BlackCollectionImages[0]
+  items[0].style.backgroundSize = "100% 100%"
+  items[1].style.background = BlackCollectionImages[1]
+  items[1].style.backgroundSize = "100% 100%"
+  items[2].style.background = BlackCollectionImages[2]
+  items[2].style.backgroundSize = "100% 100%"
+
+  
+}
+function BabyBlueCollection() {
+  beyond = document.getElementById("clothingline")
+  beyond.innerHTML = ''
+  beyond.innerHTML += BabyBlueCollectionDivs[0]
+  beyond.innerHTML += BabyBlueCollectionDivs[1]
+  beyond.innerHTML += BabyBlueCollectionDivs[2]
+  //alert("you've selected the Og Blue Take Chances Hoodie")
+  items = document.getElementsByClassName("item")
+  items[0].style.background = BabyBlueCollectionImages[0]
+  items[0].style.backgroundSize = "100% 100%"
+  items[1].style.background = BabyBlueCollectionImages[1]
+  items[1].style.backgroundSize = "100% 100%"
+  items[2].style.background = BabyBlueCollectionImages[2]
+  items[2].style.backgroundSize = "100% 100%"
+  
+}
+function BabyPinkCollection() {
+  beyond = document.getElementById("clothingline")
+  beyond.innerHTML = '' 
+  beyond.innerHTML += BabyPinkCollectionDivs[0]
+  beyond.innerHTML += BabyPinkCollectionDivs[1]
+  beyond.innerHTML += BabyPinkCollectionDivs[2]
+  //alert("you've selected the Og Pink Take Chances T-Shirt")
+  items = document.getElementsByClassName("item")
+  items[0].style.background = BabyPinkCollectionImages[0]
+  items[0].style.backgroundSize = "100% 100%"
+  items[1].style.background = BabyPinkCollectionImages[1]
+  items[1].style.backgroundSize = "100% 100%"
+  items[2].style.background = BabyPinkCollectionImages[2]
+  items[2].style.backgroundSize = "100% 100%"
+}
+BlackCollectionDivs = [
+  '<div class="item"onclick=this.classList.toggle("show-description") ><p>OG Take Chances Signature Hoodie <span class="price">$39.95</span><br /><small>This is the OG Take Chances Signature Hoodie with the Now or Never sign on the back. Hoodies are 100% cotton</small></p></div>',
+  '<div class="item"><p>Back of the OG Take Chances Signature Hoodie <span class="price">$39.95</span><br /><small>This is the OG Take Chances Signature Hoodie with the Now or Never sign on the back. Hoodies are 100% cotton</small></p></div>',
+  '<div class="item"><p>The OG Take Chances Signature T-Shirt <span class="price">$19.95</span><br /><small> T-shirts are 100% cotton</small></p></div>',
+]
+
+BabyBlueCollectionDivs = [
+  '<div class="item" onclick=this.classList.toggle("show-description")><p>Baby Blue; Dont Wait Signature Hoodie <span class="price">$44.95</span><br /><small>Special Hoodies for the new year. These are Limited edition so be sure to grab your own before it too late! Hoodies are 100% cotton.</small></p></div>',
+  '<div class="item"><p>The back of Baby Blue; Dont Wait Signature Hoodie <span class="price">$44.95</span><br /><small> Hoodies are 100% cotton.</small></p></div>',
+  '<div class="item"><p>The OG Take Chances Signature T-Shirt <span class="price">$19.95</span><br /><small> This is a clean round neck T-shirt thats 100% cotton. The graphics on the front is safe for the washer.</small></p></div>' 
+]
+
+BabyPinkCollectionDivs = [
+  '<div class="item"onclick=this.classList.toggle("show-description") ><p>Baby Pink; Dont Wait Hoodie <span class="price">$39.95</span><br /><small>January set collection T-Shirt color is baby pink. This is a clean round neck T-shirt thats 100% cotton. The graphics on the front is safe for the washer.</small></p></div>',
+  '<div class="item"><p>The back of the Baby Pink; Dont Wait Hoodie <span class="price">$39.95</span><br /><small>January set collection T-Shirt color is baby pink. This is a clean round neck T-shirt thats 100% cotton. The graphics on the front is safe for the washer.</small></p></div>',
+  '<div class="item"><p>The OG Take Chances Signature T-Shirt <span class="price">$19.95</span><br /><small> This is a clean round neck T-shirt thats 100% cotton. The graphics on the front is safe for the washer.</small></p></div>'
+]
+  
+  
+  
+
+
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
