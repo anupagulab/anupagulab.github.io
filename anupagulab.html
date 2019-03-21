@@ -1,252 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
-<style>
-body {
-  font-family: 'Megrim', cursive;
-  margin: 0 auto;
-  max-width: 600px;
-  background-color:lightgrey;
-  text-align: center;
-}
-div {
-  height: 500px;
-  background-size: 200px;
-  position: relative;
-  margin: 40px 0 0 0;
-  border-radius: 12px;
-}
-h1 {
-  font-family:'Megrim', monospace;
-  text-align: center;
-  font-size: 75px;
-  color: #aaa;
-  margin: 60px 0 0 0;
-}
-h2 {
-  text-align: center;
-  color: #bbbbb;
-  margin: 0px 0 70px 0;
-}
-p {
-  color: rgba(0,0,10,1);
-  background: black;
-  background: linear-gradient(bottom, rgba(0,255,1), rgba(255,100,0,.4));
-  background: -webkit-linear-gradient(bottom, rgba(255,0,0,1), rgba(0,0,255,.4));
-  background: -moz-linear-gradient(bottom, rgba(255,0,255,1), rgba(0,255,0,.4));
-  padding: 0px;
-  line-height: 29px;
-  text-align: justify;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  height: 4px;
-  transition: height .5s;
-  -webkit-transition: height .5s;
-  -moz-transition: height .5s;
-}
-
-small {
-  opacity: 0;
-}
-
-.show-description p {
-  height: 150px;
-}
-
-.show-description small {
-  opacity: 1;
-}
-
-.first{
-  background-image: url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyBrock_TakeChances_NowNever_Hoodiet_MockUp_Back_BLK_bc710903-fa19-44a2-b17f-5394924437ff_2048x.jpg?v=1538750461");
-}
-.second{
-  background-image: url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyB_NoworNever_Hoodie_BlueBackMockUpRev_2048x.jpg?v=1516309038");
-}
-.dessert{
-  background-image: url("https://i.pinimg.com/originals/9f/a7/03/9fa70364514afabc5c65eed0a8c83c35.jpg");
-}
-.price {
-  float: right;
-}  
-
- }
-    ul {
-      padding: 10px;
-      background: rgba(0,255,255,.3);
-  }
-@media (max-width: 500px) {
-  h1 {
-    font-size: 50px;
-    margin-top: 20px;
-    line-height: 40px;
-  }
-  h2 {
-    font-size: 20px;
-    margin: 20px 0 30px 0;
-  }
-  div {
-    margin: 20px 12px 0 12px;
-  }
-  p {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  small {
-    font-size: 16px;
-}
-  li {
-   display: inline;
-   padding: 30px 3px 30px 3px;
-}
-</style>
-
+  <title>Bethany Bootstrap Theme</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+ <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- =======================================================
+    Theme Name: Bethany
+    Theme URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
 </head>
 
 <body>
-    <ul>
-      <li><button onclick=BlackCollection()>Black</button></li>
-      <li><button onclick=BabyBlueCollection()>BabyBlue</button></li>
-      <li><button onclick=BabyPinkCollection()>BabyPink</button></li>
-	  <li><button onclick=RedCollection()>Red</button></li> 
-    </ul>
-<h1>Take Chances</h1>
-<h2>A Life Project.</h2>
+  <!--header-->
+  <header class="main-header" id="header">
+    <div class="bg-color">
+      <!--nav-->
+      <nav class="nav navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynavbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="fa fa-bars"></span>
+                        </button>
+              <a href="index.html" class="navbar-brand">Sparksss</a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right" id="mynavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#header">Home</a></li>
+                <li><a href="#feature">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Info</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--/ nav-->
+      <div class="container text-center">
+        <div class="wrapper wow fadeInUp delay-05s">
+          <h2 class="top-title">Visual Arts</h2>
+          <h3 class="title">Shelby Parks</h3>
+          <h4 class="sub-title">Director/Cinematographer/Photographer</h4>
+          <button type="submit" class="btn btn-submit">Sparksss Shop</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--/ header-->
+  <!---->
+  <section id="cta-1">
+    <div class="container">
+      <div class="row">
+        <div class="cta-info text-center">
+          <h3><span class="dec-tec">“</span>Never Let Anyone Tell You Art Is Not A Career<span class="dec-tec">”</span> -Shelby Parks</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---->
+  <!---->
+  <section id="feature" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 wow fadeInLeft delay-05s">
+          <div class="section-title">
+            <h2 class="head-title">Photography/ Videography Style</h2>
+            <hr class="botm-line">
+            <p class="sec-para">Shooting styles: portraits, fashion, Abstract and landscape. </p>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="col-md-6 wow fadeInRight delay-02s">
+            <div class="icon">
+              <i class="fa fa-photo"></i>
+            </div>
+            <div class="icon-text">
+              <h3 class="txt-tl">Photos: Editing Style</h3>
+              <p class="txt-para">My editing style is usually described as a dark mysterious with a hit of twilight vibe.</p>
+            </div>
+          </div>
+          <div class="col-md-6 wow fadeInRight delay-02s">
+            <div class="icon">
+              <i class="fa fa-cogs"></i>
+            </div>
+            <div class="icon-text">
+              <h3 class="txt-tl">Photos: Editing Software</h3>
+              <p class="txt-para">Persoanlly I use a few different editing softwares to achieve my desired look for every photo. Those editing softwares that I use are: Lightroom and Adobe Photoshops CC.</p>
+            </div>
+          </div>
+          <div class="col-md-6 wow fadeInRight delay-04s">
+            <div class="icon">
+              <i class="fa fa-film"></i>
+            </div>
+            <div class="icon-text">
+              <h3 class="txt-tl">Videos: Editing Style</h3>
+              <p class="txt-para">For editing videos I also work with the same idea as my photos, I edit them to accquire a dark, mysterious, foggy look.</p>
+            </div>
+          </div>
+          <div class="col-md-6 wow fadeInRight delay-04s">
+            <div class="icon">
+              <i class="fa fa-gears"></i>
+            </div>
+            <div class="icon-text">
+              <h3 class="txt-tl">Videos: Editing Software</h3>
+              <p class="txt-para">As I do for my photos iuse a few different editing softwares to achieve my desired look. Those softwares are: Adobe After Effects, Adobe Premire Pro Cs6. </p>
+            </div>
+          </div>
+          <div class="col-md-6 wow fadeInRight delay-06s">
+            <div class="icon">
+              <i class="fa fa-lightbulb-o"></i>
+            </div>
+            <div class="icon-text">
+              <h3 class="txt-tl">Tips For Taking Photos & Editing</h3>
+              <p class="txt-para">Everyone has their own photography and editing style so its good to find your prefrence of both the work from there. You can try a few differnt styles of editing to achieve your own finishing desired look, however you need to become familiar with your editing software to understand what does what.  </p>
+            </div>
+          </div>
+          <div class="col-md-6 wow fadeInRight delay-06s">
+            <div class="icon">
+              <i class="fa fa-question mark-o"></i>
+            </div>
+            <div class="icon-text">
+              <h3 class="txt-tl">Shooting and Editing Videos?</h3>
+              <p class="txt-para">Some tips fora good video would be to shoot the way that you want. This way you rare able to edit easier plus your filming and editing style can fall into place and have a specific look everytime.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---->
+  <section class="section-padding parallax bg-image-2 section wow fadeIn delay-08s" id="cta-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="cta-txt">
+            <h3>Subscribe For More!</h3>
+            <p>When you subcribe you're automatically entering for access to more editing tips, tools, chances to join projects and much more!'</p>
+          </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <a href="#" class="btn btn-submit">Subscribe!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---->
+  <!---->
+  <section class="section-padding wow fadeInUp delay-02s" id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <div class="section-title">
+            <h2 class="head-title">Sparksss Portfolio</h2>
+            <hr class="botm-line">
+            <p class="sec-para">Here's a portfolio depicting my type of photograhpy and editing style.'</p>
+          </div>
+        </div>
+        <div class="col-md-9 col-sm-12">
+		<div class="row">
+          <div class="col-md-4 col-sm-6 padding-right-zero">
+            <div class="portfolio-box design">
+              <img src="https://i.pinimg.com/originals/6c/d2/06/6cd2066c388bccd72f47394f952bfa16.jpg" alt="" class="img-responsive">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 padding-right-zero">
+            <div class="">
+              <img src="https://i.pinimg.com/originals/62/9e/48/629e4848fee1ca57831b6410150d6adc.jpg" alt="" class="img-responsive" style="width: 75%; margin: 0 auto;">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 padding-right-zero">
+            <div class="portfolio-box design">
+              <img src="https://i.pinimg.com/originals/47/da/d6/47dad6dfc6f302db81235657fbfacac0.jpg" alt="" class="img-responsive">
+            </div>
+          </div>
+		</div>
+		<div class="row">
+          <div class="col-md-4 col-sm-6 padding-right-zero">
+            <div class="portfolio-box design">
+              <img src="https://static1.squarespace.com/static/52d6fff3e4b0e230ac8adfd6/t/5bf4b867f950b7ad719183db/1542764703733/MADI-PRESS-CR-SHELBY-PARKS-1_web.jpg" alt="" class="img-responsive">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 padding-right-zero">
+            <div class="portfolio-box design">
+              <img src="https://assets.bigcartel.com/product_images/224376601/IMG_9728.jpg?auto=format&fit=max&w=900" alt="" class="img-responsive">
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 padding-right-zero">
+            <div class="portfolio-box design">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXnjwC9PHZOtqZDrbmofFOovT3lyXMsMPaXItnRUgIGd-wNk9N">
+            </div>
+          </div>
+		 </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---->
+  <!---->
+  <section class="section-padding wow fadeInUp delay-05s" id="contact">
+    <div class="container">
+      <div class="row white">
+        <div class="col-md-8 col-sm-12">
+          <div class="section-title">
+            <h2 class="head-title black">Want to Get in Contact?</h2>
+            <hr class="botm-line">
+            <p class="sec-para black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12">
+          <div class="col-md-4 col-sm-6" style="padding-left:0px;">
+            <h3 class="cont-title">Email Us</h3>
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <div class="contact-info">
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validation"></div>
+                </div>
 
-<div id="clothingline"></div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validation"></div>
+                </div>
 
-<script>
-BlackCollectionImages = [
-'url("https://www.artistshot.com/assets/images/admin/product_design/2341907/colby-brock-take-chances-hoodie.jpg")',
-'url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyBrock_TakeChances_NowNever_Hoodiet_MockUp_Back_BLK_bc710903-fa19-44a2-b17f-5394924437ff_2048x.jpg?v=1548210012")',
-'url("https://www.artistshot.com/assets/images/admin/product_design/2341906/colby-brock-take-chances-t-shirt.jpg")',
-'url("https://i.pinimg.com/originals/7a/20/30/7a2030463715f9c2d8aef543a0f6e740.jpg")',
-'url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyBrock_Undergarment_Product-11_900x.jpg?v=1548209077")'
-]
-BabyBlueCollectionImages = [
- 'url("https://i.pinimg.com/originals/27/22/f5/2722f584af02ba3c86af071cb1a6cfbc.jpg")',
- 'url("https://i.pinimg.com/236x/93/24/37/932437d3f63cd8ad44d8a9a90a20be42.jpg")',
- 'url("https://i.pinimg.com/originals/80/7d/9f/807d9fbb00a16f601e7ef7552ef5bff6.jpg")'
-]
-BabyPinkCollectionImages = [
-'url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyBrock__Now-Never_DontWait_Hoodie_MockUp_Front_PNK_2048x.jpg?v=1516309038")',
-'url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyB_NoworNever_Hoodie_PinkBackMockUpRev_2048x.jpg?v=1516309038")',
-  'url("https://i.pinimg.com/originals/9f/a7/03/9fa70364514afabc5c65eed0a8c83c35.jpg")'
-]
-RedCollectionImages = [
-'url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyBrock_TakeChances_Hoodie_Front_RED_2048x.jpg?v=1538377497")',
-'url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyBrock_TakeChances_Hoodie_Back_RED_900x.jpg?v=1538377497")',
-'url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyBrock_TakeChances_Tee_Back_RED_2048x.jpg?v=1538377531")',
-'url("https://cdn.shopify.com/s/files/1/0714/1079/products/ColbyBrock_TakeChances_Tee_Front_RED_2048x.jpg?v=1538377531")'
-]
-  
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validation"></div>
+                </div>
+                <button type="submit" class="btn btn-send">Send</button>
+              </form>
+            </div>
 
- 
-  
-
-
-
-function BlackCollection() {
-  beyond = document.getElementById("clothingline")
-  beyond.innerHTML = ''
-  beyond.innerHTML += BlackCollectionDivs[0]
-  beyond.innerHTML += BlackCollectionDivs[1]
-  beyond.innerHTML += BlackCollectionDivs[2]
-  beyond.innerHTML += BlackCollectionDivs[3]
-  beyond.innerHTML += BlackCollectionDivs[4]
-  //alert("you've selected the Og Black Take Chances Hoodie")
-  items = document.getElementsByClassName("item")
-  items[0].style.background = BlackCollectionImages[0]
-  items[0].style.backgroundSize = "100% 100%"
-  items[1].style.background = BlackCollectionImages[1]
-  items[1].style.backgroundSize = "100% 100%"
-  items[2].style.background = BlackCollectionImages[2]
-  items[2].style.backgroundSize = "100% 100%"
-  items[3].style.background = BlackCollectionImages[3]
-  items[3].style.backgroundSize = "100% 100%"
-  items[4].style.background = BlackCollectionImages[4]
-  items[4].style.backgroundSize = "100% 100%"
-
-  
-}
-function BabyBlueCollection() {
-  //alert("you've selected the Og Blue Take Chances Hoodie")
-  beyond = document.getElementById("clothingline")
-  beyond.innerHTML = ''
-  beyond.innerHTML += BabyBlueCollectionDivs[0]
-  beyond.innerHTML += BabyBlueCollectionDivs[1]
-  beyond.innerHTML += BabyBlueCollectionDivs[2]
-  items = document.getElementsByClassName("item")
-  items[0].style.background = BabyBlueCollectionImages[0]
-  items[0].style.backgroundSize = "100% 100%"
-  items[1].style.background = BabyBlueCollectionImages[1]
-  items[1].style.backgroundSize = "100% 100%"
-  items[2].style.background = BabyBlueCollectionImages[2]
-  items[2].style.backgroundSize = "100% 100%"
-  
-}
-function BabyPinkCollection() {
-  beyond = document.getElementById("clothingline")
-  beyond.innerHTML = '' 
-  beyond.innerHTML += BabyPinkCollectionDivs[0]
-  beyond.innerHTML += BabyPinkCollectionDivs[1]
-  beyond.innerHTML += BabyPinkCollectionDivs[2]
-  //alert("you've selected the Og Pink Take Chances T-Shirt")
-  items = document.getElementsByClassName("item")
-  items[0].style.background = BabyPinkCollectionImages[0]
-  items[0].style.backgroundSize = "100% 100%"
-  items[1].style.background = BabyPinkCollectionImages[1]
-  items[1].style.backgroundSize = "100% 100%"
-  items[2].style.background = BabyPinkCollectionImages[2]
-  items[2].style.backgroundSize = "100% 100%"
-}
-function RedCollection() {
-  beyond = document.getElementById("clothingline")
-  beyond.innerHTML = '' 
-  beyond.innerHTML += RedCollectionDivs[0]
-  beyond.innerHTML += RedCollectionDivs[1]
-  beyond.innerHTML += RedCollectionDivs[2]
-  beyond.innerHTML += RedCollectionDivs[3]
-  //alert("you've selected the Og Pink Take Chances T-Shirt")
-  items = document.getElementsByClassName("item")
-  items[0].style.background = RedCollectionImages[0]
-  items[0].style.backgroundSize = "100% 100%"
-  items[1].style.background = RedCollectionImages[1]
-  items[1].style.backgroundSize = "100% 100%"
-  items[2].style.background = RedCollectionImages[2]
-  items[2].style.backgroundSize = "100% 100%"
-  items[3].style.background = RedCollectionImages[3]
-  items[3].style.backgroundSize = "100% 100%"
-}
-BlackCollectionDivs = [
-  '<div class="item" onclick=this.classList.toggle("show-description") ><p>OG Take Chances Signature Hoodie <span class="price">$39.95</span><br /><small>This is the OG Take Chances Signature Hoodie with the Now or Never sign on the back. Hoodies are 100% cotton</small></p></div>',
-  '<div class="item" onclick=this.classList.toggle("show-description")><p>Back of the OG Take Chances Signature Hoodie <span class="price">$39.95</span><br /><small>This is the OG Take Chances Signature Hoodie with the Now or Never sign on the back. Hoodies are 100% cotton</small></p></div>',
-  '<div class="item" onclick=this.classList.toggle("show-description") ><p>The OG Take Chances Signature T-Shirt <span class="price">$19.95</span><br /><small> T-shirts are 100% cotton</small></p></div>',
-	'<div class="item" onclick=this.classList.toggle("show-description")><p>NOW OR NEVER Dad Hat>span class="price">$18.00</span><br /><small> Hats are one size with adjustable back straps.</small></p></div>',
-	'<div class="item" onclick=this.classList.toggle("show-description")><p>All New Take Chances Sports Bras <span class="price">$19.95</span><br /><small> Bras are avaliable in all sizes starting from xs-xxl</small></p></div>',
-]
-
-BabyBlueCollectionDivs = [
-  '<div class="item" onclick=this.classList.toggle("show-description")><p>Baby Blue; Dont Wait Signature Hoodie <span class="price">$44.95</span><br /><small>Special Hoodies for the new year. These are Limited edition so be sure to grab your own before it too late! Hoodies are 100% cotton.</small></p></div>',
-  '<div class="item" onclick=this.classList.toggle("show-description")><p>The back of Baby Blue; Dont Wait Signature Hoodie <span class="price">$44.95</span><br /><small> Hoodies are 100% cotton.</small></p></div>',
-  '<div class="item" onclick=this.classList.toggle("show-description")><p>The OG Take Chances Signature T-Shirt <span class="price">$19.95</span><br /><small> This is a clean round neck T-shirt thats 100% cotton. The graphics on the front is safe for the washer.</small></p></div>' 
-]
-BabyPinkCollectionDivs = [
-  '<div class="item" onclick=this.classList.toggle("show-description") ><p>Baby Pink; Dont Wait Hoodie <span class="price">$39.95</span><br /><small>January set collection T-Shirt color is baby pink. This is a clean round neck T-shirt thats 100% cotton. The graphics on the front is safe for the washer.</small></p></div>',
-  '<div class="item" onclick=this.classList.toggle("show-description") ><p>The back of the Baby Pink; Dont Wait Hoodie <span class="price">$39.95</span><br /><small>January set collection T-Shirt color is baby pink. This is a clean round neck T-shirt thats 100% cotton. The graphics on the front is safe for the washer.</small></p></div>',
-  '<div class="item" onclick=this.classList.toggle("show-description")><p>The OG Take Chances Signature T-Shirt <span class="price">$19.95</span><br /><small> This is a clean round neck T-shirt thats 100% cotton. The graphics on the front is safe for the washer.</small></p></div>'
-]
-RedCollectionDivs = [
-  '<div class="item" onclick=this.classList.toggle("show-description") ><p>Red Take Chances Hoodie <span class="price">$39.95</span><br /><small>Limited Edition collection T-Shirt color is Red. This is a clean round neck T-shirt thats 100% cotton. The graphics on the front is safe for the washer.</small></p></div>',
-  '<div class="item" onclick=this.classList.toggle("show-description") ><p>The back of the Red Hoodie <span class="price">$39.95</span><br /><small>January set collection T-Shirt color is Red. This is a clean round neck T-shirt thats 100% cotton. The graphics on the front is safe for the washer.</small></p></div>',
-  '<div class="item" onclick=this.classList.toggle("show-description")><p>The OG Take Chances Signature T-Shirt in Red! <span class="price">$19.95</span><br /><small> This is a clean round neck T-shirt thats 100% cotton. The graphics on the front is safe for the washer.</small></p></div>',
-	'<div class="item" onclick=this.classList.toggle("show-description")><p>The back view of OG Take Chances Signature T-Shirt in the color RED <span class="price">$19.95</span><br /><small> This is a clean round neck T-shirt thats 100% cotton. The graphics on the front is safe for the washer.</small></p></div>'
-]
-
-  
-  
-
-</script>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <h3 class="cont-title">Visit Us</h3>
+            <div class="location-info">
+              <p class="white"><span aria-hidden="true" class="fa fa-map-marker"></span>Los Angelos</p>
+              <p class="white"><span aria-hidden="true" class="fa fa-phone"></span>Phone: 917-442-2277</p>
+              <p class="white"><span aria-hidden="true" class="fa fa-envelope"></span>Email:shelbyparks@gmail.com <a href="" class="link-dec">hi@yourdomain.com</a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-icon-container hidden-md hidden-sm hidden-xs">
+              <span aria-hidden="true" class="fa fa-envelope-o"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---->
+  <!---->
+  <footer class="" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7 footer-copyright">
+          © sparksss - All rights reserved
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Bethany
+            -->
+            Designed by <a href="sparksss.shop/">Anupa Gulab</a>
+          </div>
+        </div>
+        <div class="col-sm-5 footer-social">
+          <div class="pull-right hidden-xs hidden-sm">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!---->
+  <!--contact ends-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
 
 </body>
+</html>
+
