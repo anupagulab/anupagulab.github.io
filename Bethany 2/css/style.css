@@ -7,7 +7,7 @@
 
 body {
   line-height: 1.5;
-  font-family: 'Poiret One', sans-serif;
+  font-family:'Playfair Display', serif;
   overflow-x: hidden;
 }
 
@@ -34,7 +34,7 @@ table {
 }
 
 h1, h2, h3, h4, h5, h6 {
- font-family: 'Poiret One', sans-serif;
+ font-family:'Special Elite', serif;
 }
 
 /**media Queries**/
@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-color {
-  background-color: RGBA(0, 1, 5, 0.41);
+  background-color: RGBA(0, 2, 5, 0.41);
 }
 
 .nav>li>a {
