@@ -66,6 +66,8 @@ function draw() {
     y= y + 10*direction_v
     fill(180,220,160)
     circle(s,c,55)
+	if (touches.length == 0)   {
+	
     if(keyIsDown(LEFT_ARROW)) {
       s = s - 10 
   }
@@ -78,6 +80,12 @@ function draw() {
     if(keyIsDown(DOWN_ARROW)) {
       c = c + 10 
   }
+}
+else { 
+		s = touches[0].x
+		c = touches[0].y
+}
+
    x = x + 2* direction_h
    y = y - 3*direction_v
     if (x > width || x < 0) {
@@ -93,6 +101,7 @@ function draw() {
 
 
   }
+
 
 for (i=0; i<rapid; i=i+1) {
     fill(255,100,50)
@@ -234,6 +243,10 @@ function generate_alltime_leaderboard() {
 }
 
 generate_alltime_leaderboard()
+
+
+
+
 
 
 
