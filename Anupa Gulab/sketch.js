@@ -82,8 +82,8 @@ function draw() {
   }
 }
 else { 
-		s = touches[0].x
-		c = touches[0].y
+	s = touches[0].x
+	c = touches[0].y
 }
 
    x = x + 2* direction_h
